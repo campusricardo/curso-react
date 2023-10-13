@@ -4,7 +4,7 @@ blogdata.push({
     title: 'What is React?',
     slug: 'whats-react',
     content: 'React the best Javascript Framework',
-    author: 'Ricardo Franco'
+    author: 'riadfrancoq'
 });
 
 blogdata.push({
