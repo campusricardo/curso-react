@@ -1,10 +1,10 @@
 import React from "react";
-
+import { useAuth } from "./auth";
 const LogoutPage = () => {
-    
+    const auth = useAuth();
     const logout = (e) => {
         e.preventDefault();
-        console.log('Logout');
+        auth.logout();
     };
 
     return (

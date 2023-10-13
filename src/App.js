@@ -6,12 +6,13 @@ import { ProfilePage } from "./ProfilePage";
 import { BlogPost } from "./BlogPost.js";
 import { LoginPage } from "./LoginPage";
 import { LogoutPage } from "./LogoutPage";
-
+import { AuthProvider } from './auth';
 
 const App = () => {
   return (
     <>
       <HashRouter>
+        <AuthProvider>
         <Menu />
 
         <Routes>
@@ -25,7 +26,7 @@ const App = () => {
         <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<p> Not found </p>} />
         </Routes>
-
+        </AuthProvider>
       </HashRouter>
     </>
   );
